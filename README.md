@@ -5,7 +5,7 @@ Fetches metadata (title, description, image, and URL) from a given website and n
 Can be integrated in a **Telegram bot** or run easily from the **cli**. The only arg is the URL.
 
 
-<img src="img/new_db_records.png" style="max-width: 600px" alt="new_db">
+<img src="img/new_db_records.png" style="max-width: 500px" alt="new_db">
 
 ## Instructions
 
@@ -17,7 +17,7 @@ Create a new database using `create_db.py` - fill in the `api_key`, `page_id` in
 
 The page will look like this:
 
-<img src="img/new_page_new_db.png" style="max-width: 600px" alt="new_db">
+<img src="img/new_page_new_db.png" style="max-width: 500px" alt="new_db">
 
 On the top right, click '...'/Properties/Sort by 'Created Date'.
 

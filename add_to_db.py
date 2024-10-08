@@ -28,9 +28,9 @@ def add_bookmark_to_notion(url: str):
     bookmark = Bookmark.from_url(url)
     print(bookmark.title)
     data = prepare_db_data(database_id, bookmark)
-    send_to_db(data)
+    return send_to_db(data)
 
 
 if __name__ == '__main__':
-    for url in ['https://github.com/', 'https://www.reddit.com/', 'https://en.wikipedia.org/wiki/Computer']:
+    for url in ['https://github.com/', 'https://www.reddit.com/', 'https://fastapi.tiangolo.com/']:
         add_bookmark_to_notion(url)
