@@ -17,7 +17,7 @@ def prepare_db_data(database_id, bookmark):
 
 def send_to_db(data):
     response = requests.post(update_db_url, headers=headers, json=data)
-    if response.status_code == 200:
+    if response.ok:
         print("db updated successfully")
     else:
         print(f"Failed to update block. Status code: {response.status_code}")

@@ -52,8 +52,10 @@ class Bookmark:
 
     @staticmethod
     def from_url(url) -> "Bookmark":
-        response = requests.get(url)
-        if response.status_code != 200:
+        response = requests.get(url, headers={
+            "Accept-Language": "en-US,en;q=0.9",
+        })
+        if not response.ok:
             print(response.status_code)
             return Bookmark(url=url)
 

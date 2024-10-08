@@ -59,7 +59,7 @@ def create_db(parent_page_id):
     }
 
     response = requests.post(create_db_url, headers=headers, json=data)
-    if response.status_code == 200:
+    if response.ok:
         print("db created successfully")
     print(response.json())
 
